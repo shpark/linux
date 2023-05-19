@@ -515,7 +515,7 @@ static struct rockchip_clk_branch rk3399_clk_branches[] __initdata = {
 	COMPOSITE_NOMUX(0, "atclk_core_b", "armclkb", CLK_IGNORE_UNUSED,
 			RK3399_CLKSEL_CON(3), 0, 5, DFLAGS | CLK_DIVIDER_READ_ONLY,
 			RK3399_CLKGATE_CON(1), 5, GFLAGS),
-	COMPOSITE_NOMUX(0, "pclk_dbg_core_b", "armclkb", CLK_IGNORE_UNUSED,
+	COMPOSITE_NOMUX(PCLK_COREDBG_B, "pclk_dbg_core_b", "armclkb", CLK_IGNORE_UNUSED,
 			RK3399_CLKSEL_CON(3), 8, 5, DFLAGS | CLK_DIVIDER_READ_ONLY,
 			RK3399_CLKGATE_CON(1), 6, GFLAGS),
 
